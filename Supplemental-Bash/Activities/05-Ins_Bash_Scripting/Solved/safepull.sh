@@ -12,7 +12,7 @@ if [[ `git diff --check HEAD origin/master` ]]; then
     
 else
     # Prompt stash and hard reset if no
-    read -r -p "$home has conflicting changes, Stash them for safekeeping? [Y]/N" pullstuff
+    read -r -p "$home has conflicting changes, Stash them for safekeeping? [Yes]/No" pullstuff
 
     case $pullstuff in
         [Nn][Oo]* )
