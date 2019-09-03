@@ -16,11 +16,11 @@ else
 
     case $pullstuff in
         [Nn][Oo]* )
-        #git fetch --all && git reset --hard origin/master && git pull -q origin master
+        git fetch --all && git reset --hard origin/master && git pull -q origin master
         echo "Threw away local changes and pulled down remote"
         ;;
         [Yy][Ee][Ss]* | *) 
-        #git stash -u && git pull -q origin master && git stash apply
+        git stash -u && git pull -q origin master && git stash apply
         echo "Pulled down remote and reapplied changes"
         ;;
     esac
