@@ -15,9 +15,9 @@ We even covered some branching:
 
 But there are a few things we haven't officially covered:
 
-- `git commit -a -m "commit message"` to both add and commit in one command
-- `git fetch` to download the changes to your local but not merge anything.
-- `git log` View all changes
+- `git commit -a -m "commit message"` to add deleted or modified and commit in one command _Note_: this doesn't stage new files, you have to use `git add` for that.
+- `git fetch` to download the changes to your local but not merge anything. They won't show up in your master branch until merged.
+- `git log` View all commits.
 - `git diff <source branch> <target branch>` Preview changes before merge
-- `git stash` to store your changes and revert to the HEAD commit.
+- `git stash` to store your changes and revert to the HEAD commit. `git stash --apply` will bring back the stashed changes.
 - `git reset <commit>` reset to the target commit (go back in time)
