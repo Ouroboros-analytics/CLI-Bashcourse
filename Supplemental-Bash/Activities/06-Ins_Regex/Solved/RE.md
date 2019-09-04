@@ -26,7 +26,7 @@ This command put `[` at the beginning of the file, then reprinted the line exact
 
 ---
 
-Here is an example from the bash script I use to prep the class repo. This is the command I use to mass comment all the unsolved dicrectories before class. I could just add `#` and the beginning of every line, that introduces human input error and just takes more time than it needs to.
+Here is an example from the bash script I use to prep the class repo and mass comment all the unsolved directories before class.
 
 ```bash
 sed -i "/^.*Solved/! s/^$day/#$day/" $CLASSREPO/Class-MW-Rice-Cookers/$basetopic/.gitignore
