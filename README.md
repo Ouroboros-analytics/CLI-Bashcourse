@@ -21,3 +21,9 @@ Here are a few more easy and useful commands:
 - `<command> > <filename.ext>` - (Over)Write file with output from command.
 - `<command> >> <filename.ext>` - Append file with output from command.
 - `<command1> | <command2>` - _Pipe_ the output of one command into another command.
+
+And my personal favorite:
+
+- `alias <name>="<command>"` - aliases are like variables for your terminal. They allow you to save shortcuts for commonly used commands or locations.
+
+`alias class="cd ~/Documents/RICEHOU201906DATA1"` would allow you to just type `class` and take you to your class directory. (Your location may be different)

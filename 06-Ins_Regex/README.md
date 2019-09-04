@@ -4,7 +4,7 @@ Regex (RE) is a super useful tool that allows you to match a character or string
 
 ## Syntax
 
-One use of regex you've seen so far is `[Nn][Oo]*` which checks for `N` or `n` followed by any character. This means that if you typed `No`,`N`,`no`, `nO`,`NO`,`NNNNNNNNo`... it would match and be passed as `true` to the case statement.
+One use of regex you've seen so far is `[Nn][Oo]*` which checks for `N` or `n` followed by any character. This means that if you typed `No`, `no`, `nO`,`NO`,`NNNNNNNNo`... it would match and be passed as `true` to the case statement.
 
 - `[]` establishes the set of characters to match
 - `*` translates to any number of the preceding character
