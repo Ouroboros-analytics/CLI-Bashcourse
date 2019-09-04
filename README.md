@@ -18,5 +18,6 @@ Here are a few more easy and useful commands:
 - `head <filename.ext>` - Same as above but first 10 lines. [Manual](http://man7.org/linux/man-pages/man1/head.1.html)
 - `tail <filename.ext>` - Same as above but last 10 lines. [Manual](http://man7.org/linux/man-pages/man1/tail.1.html)
 - `<command1> && <command2>` - Execute command, then _if the first was successful_ execute second command.
-- `<command>  >  <filename.ext>` - (Over)Write file with output from command.
-- `<command>  >>  <filename.ext>` - Append file with output from command.
+- `<command> > <filename.ext>` - (Over)Write file with output from command.
+- `<command> >> <filename.ext>` - Append file with output from command.
+- `<command1> | <command2>` - _Pipe_ the output of one command into another command.
