@@ -4,12 +4,12 @@
 
 One of you will need to fork the [sample repository](https://github.com/TAToolbox/Student-Study).
 
-![Fork](/Supplemental-Bash/Images/fork.png)
+![Fork](/Images/fork.png)
 
 Then you'll add your partner as a collaborator to the forked repo.
 
-![Collaborators](/Supplemental-Bash/Images/collaborators.png)
-![Add-Collab](/Supplemental-Bash/Images/add_collab.png)
+![Collaborators](/Images/collaborators.png)
+![Add-Collab](/Images/add_collab.png)
 
 ## Instructions
 

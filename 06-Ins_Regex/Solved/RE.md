@@ -22,7 +22,7 @@ A bunch of individual json strings, separated by `\n`, not in a list and no comm
 
 This command put `[` at the beginning of the file, then reprinted the line exactly, justify the line left, then put in a `,\n` at the end of each line. Finally, a `]` at the end of the file. Here is the result:
 
-![awk](/Supplemental-Bash/Images/awk.png)
+![awk](/Images/awk.png)
 
 ---
 
