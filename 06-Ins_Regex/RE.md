@@ -14,7 +14,7 @@ It looked something like this:
 {"created_at": "Mon Jul 31 00:18:03 +0000 2017", "id": 891815181378084864...}
 ```
 
-A bunch of individual json strings, separated by `\n`, not in a list and no commas.
+A bunch of individual json strings not in a list, no commas and no line separation.
 
 ```bash
 !awk 'BEGIN{print "["} {printf "%s%s",sep,$0; sep=",\n"} END{print "]"}' tweet.json > tweet_formatted.json
@@ -36,3 +36,19 @@ sed -i "/^.*Solved/! s/^$day/#$day/" $CLASSREPO/Class-MW-Rice-Cookers/$basetopic
 `-i` tells sed to make the changes directly to the file (inplace). `/^.*Solved/` says match any line ending in Solved. I could replace this with `/Solved$/` to the same effect. `!` tells sed to only make the change on lines _not_ matching the previous RE. `s/` tells sed to substitute `^$day` with `#$day`.
 
 `$day` is `1`, `2` or `3` passed in from a variable I read in earlier. `$CLASSREPO` is, well, the class repo directory and `$basetopic` is the weekly class topic read in from a find statement I have set up earlier in the script.
+
+---
+
+One more, but this time in pandas. One of the columns from the tweet_json dataframe contained a source column:
+
+| Source                                                                                   | Truncated |
+| ---------------------------------------------------------------------------------------- | --------- |
+| `<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>` | False     |
+| `<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>` | False     |
+
+but with `tweet_json.source.replace('<[^<]+?>','',inplace=True, regex=True)` it looks like this:
+
+| Source             | Truncated |
+| ------------------ | --------- |
+| Twitter for iPhone | False     |
+| Twitter for iPhone | False     |
