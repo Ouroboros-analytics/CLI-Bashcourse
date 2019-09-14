@@ -1,6 +1,6 @@
 # Advanced Git
 
-At this point, you should all be pretty well versed in the basis ways we use git.
+At thit point, you should all be pretty well versus in the basis ways we use git.
 
 - `git pull` to pull down changes from a remote repository to your local repository.
 - `git add -A` to track new or otherwise untracked files and directories.
